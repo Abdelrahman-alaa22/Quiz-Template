@@ -21,10 +21,11 @@ form.addEventListener('submit', e => {
     // To go to the top of the page after submiting
     scrollTo(0,0); 
 
-    result.querySelector('span').textContent = `${score}%`;
+    //result.querySelector('span').textContent = `${score}%`;
     result.classList.remove('d-none');
 
     // Adding number animation
+
     let ouput = 0;
     const timer = setInterval(() => {
         result.querySelector('span').textContent = `${ouput}%`;
